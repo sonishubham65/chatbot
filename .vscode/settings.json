@@ -1,3 +1,5 @@
 {
-    "eslint.enable": false
+    "eslint.enable": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/65a8ac1d-8c64-4b89-b689-59ee24eb0b79/resourceGroups/Starting/providers/Microsoft.Web/sites/chatbo65",
+    "appService.deploySubpath": "."
 }

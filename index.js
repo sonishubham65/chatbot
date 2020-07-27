@@ -1,4 +1,3 @@
-console.log("Start..")
 const path = require('path');
 const dotenv = require('dotenv');
 const ENV_FILE = path.join(__dirname, '.env');
@@ -14,14 +13,9 @@ server.listen(process.env.port || process.env.PORT || 3978, () => {
     console.log('\nTo talk to your bot, open the emulator select "Open Bot"');
 });
 
-// const adapter = new BotFrameworkAdapter({
-//     appId: process.env.MicrosoftAppId,
-//     appPassword: process.env.MicrosoftAppPassword
-// });
-
 const adapter = new BotFrameworkAdapter({
-    appId: "",
-    appPassword: ""
+    appId: process.env.MicrosoftAppId,
+    appPassword: process.env.MicrosoftAppPassword
 });
 
 const onTurnErrorHandler = async (context, error) => {

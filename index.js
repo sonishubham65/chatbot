@@ -1,3 +1,4 @@
+console.log("Start..")
 const path = require('path');
 const dotenv = require('dotenv');
 const ENV_FILE = path.join(__dirname, '.env');
